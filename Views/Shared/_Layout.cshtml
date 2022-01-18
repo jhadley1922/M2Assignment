@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+
+    <!-- Icon for the website  -->
+    <link rel="icon" type="image/x-icon" href="img/thumbsUp.png">
+
+    <!-- Style sheets -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav>
+        <a asp-controller="Default" asp-action="Index">Home</a>
+        <a asp-controller="Default" asp-action="GradeCalculator">Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/jquery/jquery-3.6.0.min (1).js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
